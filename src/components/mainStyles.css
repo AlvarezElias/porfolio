@@ -1,0 +1,7 @@
+.container {
+    height: calc(100vh - 100px);
+}
+
+.lista {
+    list-style: none;
+}
