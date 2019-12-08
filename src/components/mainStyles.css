@@ -1,7 +1,46 @@
 .container {
-    height: calc(100vh - 100px);
+    /*height: calc(100vh - 100px);*/
+    min-height: 88vh;
+    margin-bottom: 27px;
 }
 
 .lista {
     list-style: none;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    will-change: opacity, visibility;
+  }
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+.bodyCardMain {
+    /*background-color: #f3f0d3;*/
+    background-color: #eaecee;
+}
+
+.toggleCustom {
+    background-color: #343a40!important;
+    border: 0;
+    color: white;
+    border: none;
+    outline:none;
+    padding: 4px;
+}
+
+button.toggleCustom:hover {
+    color: #8a4d4d
+}
+
+button.toggleCustom:focus {outline:0;}
+
+button.toggleCustom:hover {
+    color: #blue
 }

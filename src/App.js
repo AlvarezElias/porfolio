@@ -13,12 +13,12 @@ import Footer from './components/footer'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <SideBar> </SideBar>
       <Container>
         <Row>
           <Col>
-            <Main></Main>            
+            <Main></Main>
           </Col>
         </Row>
       </Container>

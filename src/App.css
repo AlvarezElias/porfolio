@@ -1,18 +1,23 @@
 *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-html {
+html, body {
   height: 100%;
+  margin:0;
 }
 
 body {
-  height: 100%;
-  background-color: #2b3035;
+  /*background-color: #2b3035;*/
+  background-color: #eaecee;
   font-family: 'Raleway', Arial, sans-serif;
-  color: white;
+  color: #2b3035;
+  text-align: center;
 }
 
-#app {
+#App {
   height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .App {
@@ -23,17 +28,30 @@ body {
   height: 40vmin;
 }
 
-.App-header {
-  background-color: #343a40;
+.App-header {/*background-color: #2b3035;*/
+  background-color: #d8d5ba;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #2b3035;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+.root {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.footer,
+.push {
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
